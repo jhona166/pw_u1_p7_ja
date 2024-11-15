@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function cambiarColor(idelemento,color) {
+            document.getElementById(idelemento).style.color=color;
+        }
+        function cambiarTamanio(idelemento,tamanio){
+            document.getElementById(idelemento).style.fontSize=tamanio;
+        }
+        function cambiarFuente(idelemento,fuente){
+            document.getElementById(idelemento).style.fontFamily=fuente;
+        }
+        function cambiarImagen(idelemento,img1){
+            document.getElementById(idelemento).src=img1;
+        }
+        function agregarElemento(idelemento,elementohtml){
+            document.getElementById(idelemento).innerHTML=document.getElementById(idelemento).innerHTML+elementohtml;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <ul id="idmenu">
+            <li>Noticia 1 </li>
+            <li>Noticia 2</li>
+            <li>Noticia 3</li>
+
+        </ul>
+
+
+    </nav>
+    <section>
+        <h3 id="h1" for="h1">Noticia 1</h3>
+        <br>
+        <div style="text-align: center;">
+            <img id="img1" src="../img/cnne.jpg" width="300px" height="300px" alt="No se puede cargar">
+        </div>
+
+        <p id="parrafo1" type="text"> (CNN Espa&#241;ol).El presidente de Argentina, Javier Milei, se reuni&#243;
+            este
+            jueves en la Florida con el presidente electo de Estados Unidos, Donald Trump, inform&#243; la Oficina
+            del
+            mandatario argentino en su cuenta de X, donde difundi&#243; una fotograf&#237;a del encuentro.
+
+            En la imagen tambi&#233;n aparecen el empresario Elon Musk —que en el pr&#243;ximo gobierno de Estados
+            Unidos
+            encabezar&#225; un nuevo “Departamento de Eficiencia Gubernamental, seg&#250;n ha dicho Trump—; Karina
+            Milei,
+            secretaria general de la Presidencia de Argentina y hermana del presidente Milei; y Gerardo Werthein,
+            canciller del pa&#237;s sudamericano. </p>
+
+        <h1 id="h2" for="h2">Noticia 2 </h1>
+        <br>
+        <div style="text-align: center;">
+            <img id="img2" src="../img/miss.jpg" width="300px" height="300px" alt="No se puede cargar">
+        </div>
+
+        <p id="parrafo2" type="text">M&#233;xico es, por tercera ocasi&#243;n, sede del certamen Miss Universo. Para
+            esta
+            edici&#243;n, 134 participantes se disputar&#225;n la tiara "la luz del infinito", que re&#250;ne elementos
+            de otras
+            preciadas coronas que han representado a la organizaci&#243;n en su historia. </p>
+
+
+
+        <br>
+        <button onclick="cambiarColor('h1','blueviolet')">Cambiar Color</button>
+        <button onclick="cambiarTamanio('parrafo1','30px')">Cambiar Tama&#241;o</button>
+        <button onclick="cambiarFuente('parrafo2','Arial')">Cambiar Fuente</button>
+        <button onclick="cambiarImagen('img1','../img/cnne1.jpg')">Cambiar Imagen</button>
+        <button
+            onclick="agregarElemento('idmenu','<li>Calculadora 4</li>')">Agregar
+            elemento</button>
+
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
