@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#esc{
+    grid-template-columns: 150px ;
+    grid-template-rows: 75px ;
+}
+
+.calculadora {
+    /*REstablecer que elcontenido se va ad destruir visualmente en un cuadrikula.*/
+    display: grid;
+    grid-template-columns: 75px 75px 75px  75px;
+    grid-template-rows: 75px 75px  75px  75px 75px 75px;
+      
+    padding: 15px;
+    margin:10px;
+   /* border:solid blue;*/
+    border-radius: 35px;
+    background: rgb(176,190,199);
+    box-shadow: 15px 10px 5px 5px  rgb(10,10,10);
+
+
+
+}
+/*
+#num5{
+        border: solid blue;
+        padding:10px   5px    20px 7px;
+        margin:10px   5px    20px 7px;
+
+}*/
+
+.display{
+
+    grid-column: span 4;
+    padding: 15px;
+    background: rgb(113, 201, 245);
+    border-radius: 35px;
+    text-align: right;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 35px;
+
+}
+
+.com-2{
+    grid-template-columns: 75;
+}
