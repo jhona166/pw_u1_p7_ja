@@ -4,10 +4,6 @@
     align-items: center;
 }
 
-#esc{
-    grid-template-columns: 150px ;
-    grid-template-rows: 75px ;
-}
 
 .calculadora {
     /*REstablecer que elcontenido se va ad destruir visualmente en un cuadrikula.*/
@@ -37,7 +33,7 @@
 
     grid-column: span 4;
     padding: 15px;
-    background: rgb(113, 201, 245);
+    background: rgb(235, 212, 110);
     border-radius: 35px;
     text-align: right;
     margin-bottom: 10px;
@@ -47,5 +43,31 @@
 }
 
 .com-2{
-    grid-template-columns: 75;
+    grid-column: span 2 ;
+}
+
+button{
+    cursor:pointer;
+    margin: 5px;
+    padding: 5px;
+    border-radius :50px ;
+    background-color: rgb(143, 158, 168);
+    
+
+    font-size: 25px;
+    color: black;
+    box-shadow: 5px 3px 3px 3px rgb(10,10,10);
+}
+/*
+importante el hover debe ir antes que el active
+*/
+button:hover{
+   
+    background: rgb(199, 186, 186);
+}
+
+
+button:active{
+    background: rgb(131, 131, 133);
+
 }
