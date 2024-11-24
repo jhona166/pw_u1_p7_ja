@@ -15,6 +15,17 @@ function setearValorConcatenado() {
     document.getElementById("id-display").innerText = valorActual + valor;
 }
 
+function recibirValor(){
+    console.log(valor)
+    if(num1==null){
+        num1=valor
+        setearValor(num1)
+    }
+}
+
+
+
+
 
 function sumar(num1, num2) {
     return num1 + num2
@@ -43,3 +54,4 @@ function multiplicarNumeros() {
 function convertir(idCampo) {
     return parseInt(document.getElementById(idCampo).value)
 }
+
