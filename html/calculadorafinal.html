@@ -17,26 +17,26 @@
         <div class="container">
             <div class="calculadora">
                 <div id ="id-display" class="display">
-                    1
+                    0
                 </div>
                 <button onclick="setearValor()" class="com-2">C</button>
                 <button>&larr;</button>
-                <button>%</button>
-                <button for="idNum7">7</button>
-                <button onclick="setearValor()">8</button>
-                <button for="idNum9">9</button>
-                <button>X</button>
-                <button for="idNum4">4</button>
-                <button for="idNum5">5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button onclick="sumar()">+</button>
-                <button class="com-2">0</button>
-                <button>.</button>
-                <button>=</button>
+                <button onclick="evaluarOperacion('%')">%</button>
+                <button onclick="recibirValor(7)">7</button>
+                <button onclick="recibirValor(8)">8</button>
+                <button onclick="recibirValor(9)">9</button>
+                <button onclick="evaluarOperacion('X')">X</button>
+                <button onclick="recibirValor(4)">4</button>
+                <button onclick="recibirValor(5)">5</button>
+                <button onclick="recibirValor(6)">6</button>
+                <button onclick="evaluarOperacion('-')">-</button>
+                <button onclick="recibirValor(1)">1</button>
+                <button onclick="recibirValor(2)">2</button>
+                <button onclick="recibirValor(3)">3</button>
+                <button onclick="evaluarOperacion('+')">+</button>
+                <button  onclick="recibirValor(0)" class="com-2">0</button>
+                <button onclick="recibirValor('.')">.</button>
+                <button onclick="igual()">=</button>
             </div>
         </div>
     </section>
