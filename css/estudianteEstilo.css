@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #59abe3;
+}
+
+p:before{
+    content:attr(type);
+    display:block;
+    margin:3px;
+    font-size: 17px;
+    color:#5a5a5a;
+}
+input{
+    width:280px;
+    border: none;
+    border-bottom:2px solid #bebed2;
+    /*background:none se quita el color blanco*/
+    background:none;
+
+}
+/*Se pone escandaloso el input*/
+input:focus{
+    /*desaparece el efecto*/
+    outline:none;
+    border-bottom:2px solid #b1b1c5;
+}
+h2{
+    margin:10px 2px;
+    width: 180px;
+    color:#78788C;
+    border-bottom: 3px solid #78788c;
+
+}
+form{
+    width:300px;
+    height:425px;
+    background:#e6e6e6;
+    border-radius: 10px;
+    /*border: 3px solid yellow;*/
+    padding-left: 15px;
+    padding-top: 15px;
+    box-shadow: 5px 3px 3px 3px rgb(10,10,10);
+}
