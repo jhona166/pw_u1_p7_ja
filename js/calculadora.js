@@ -13,8 +13,8 @@ function setearValor(valor) {
 function setearValorConcatenado(valor) {
     let valorActual = document.getElementById("id-display").innerText;
     console.log(valorActual);
-    document.write(valor+valorActual);
-    console.log("Meinst"+ document.write(valor,valorActual))
+   
+    
     document.getElementById("id-display").innerText = ''+valorActual+valor;
 }
 
